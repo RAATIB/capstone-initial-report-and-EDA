@@ -19,7 +19,7 @@ Our analysis was specified to include only numeric features of a song, like a sc
 Our conclusions lead us to **actionable steps for artists and company** to help secure commercial success in a competitive landscape, giving direction for producers and songwriters to **assess and predict which tracks can help them stand out to a crowd** and stay afloat in a market of constant innovation!
 
 
-## Strongest Indicators of Success
+## Strongest Indicators of Success (Per Linear Regression)
 
 ### Danceability and Time signature (Positive indicators) vs. Speechiness (Negative Indicators)
 
@@ -33,10 +33,18 @@ Our conclusions lead us to **actionable steps for artists and company** to help 
 * Our analysis shows promising information for live and acoustic tracks. **Liveness and acousticness both significantly contribute to a song's popularity, implying that audiences want live and acoustic versions of music.** This may imply that a more genuine or authentic spin on a song leads to success. It is not as strong of an indicator as danceability or time signature, though, so those should be prioritized when producing for popularity.
 
 
-## Conclusion and Summary:
+## Summary of Insights from Initial Model:
 *Here, we'll summarize how numeric features of a song predict a song's success.*
 
 * Strongest Positive Indicators: Danceability and a higher time signature are very strongly beneficial for a song's popularity.
 * Strongest Negative Indicator: Speechiness tends to very strongly decline the popularity of a song.
 * Moderate Positive Indicator: Liveness and acousticness are aspects that can decently improve the popularity of a song. Data tells artists that a live or acoustic Spotify version tends to succeed!
 * Lack of Indication: Artists can rely on diverse tempo, key, mode, loudness, valence, instrumentalness, AND duration! These do not strongly affect the popularity of a song.
+
+
+## Further Modeling
+* To discover whether more complex machine learning models could give us deeper insights into this problem, we engaged with several other techniques to find actionable information for artists and management.
+* Specifically, we tested machine learning models such as decision tree classifiers, random forest regressors, and artificial neural networks. These are more complex machine learning models that can be attuned to find very special and specific trends in data. In the case of music popularity, **insights into the effectiveness of these models can guide business leaders to devote resources adequately towards machine learning analysis**. Such insights can guide business leaders designing similar projects seeking to convert data into deliverables and marketing techniques.
+* Our experiences comparing "Classifiers" and "Regressors" indicated that seeking actionable insights in Spotify track data and similar music world data can be heavily defined by the type of data being used. Engineers engaging in business projects should know that certain datasets can prove exceedingly difficult to address with classifiers, and that heavily numeric data can be more adequately addressed using regressors. Even so, data that gives us actionable insights like the ones above may actually be easier to address using simpler models!
+* Our experiences with artificial neural networks demonstrated the need for guidance. Business leaders should seek to understand the difference in complexity of a given problem, and that artificial neural networks tend to be very complex machine learning models that use a lot of computational resources and need a lot of fine-tuning to build a model that adequately reflects real-world scenarios. Essentially, business leaders in the music space should seek engineers and other individuals with a knowledge background that allows them to fine-tune neural networks towards unique problem, and accept that simpler models may give us very insights that cannot easily be deepened through the use of very complex models. Business leaders should seek consultation with individuals who have deep technical knowledge of these more complex models before engaging with them in a business project!
+
